@@ -1,8 +1,13 @@
 ### Sources
-- Question to be answered
-  - Answer to question
-    - Source: [Article name](Website URL)
-
+- What is the most efficient way to delete duplicate entries?
+  - df.drop_duplicates() gives a lot of flexibility in how duplicates (checked on specific columns) are deleted
+    - Source: [stack overflow question](https://stackoverflow.com/questions/12497402/python-pandas-remove-duplicates-by-columns-a-keeping-the-row-with-the-highest)
+- What is the easiest way to get the count for unique values in a list?
+  - list.nunique() combines **length** and **unique** in one go
+    - Source: [stack overflow question](https://stackoverflow.com/questions/45759966/counting-unique-values-in-a-column-in-pandas-dataframe-like-in-qlik)
+- How to pull duplicate rows?
+  -  Take the subset of the dataset using df.duplicated() as a condition, just identify which columns you want to check
+    - Source: [thispointer.come article](https://thispointer.com/pandas-find-duplicate-rows-in-a-dataframe-based-on-all-or-selected-columns-using-dataframe-duplicated-in-python/) on finding duplicate rows in a DataFrame
 ### Collaborations
 - No collaboration on this repository
 
@@ -11,9 +16,11 @@ What is Being Asked? Pseudocode.
 
 - Clean data
   - WiBA
+    - Join the two databases
     - Check the mouse ID's for any duplicate time points and remove those duplicate data points
   - Pc
     - Use df.drop_duplicates() to remove duplicate rows
+    - Don't forget to reset the index
 - Summary statistics - tumor
   - WiBA
     - Generate a summary statistics table for the mean, median, variance, std dev, and SEM of the tumor volume for each drug regimen
@@ -35,14 +42,13 @@ What is Being Asked? Pseudocode.
     - Calculate the quartiles and IQR and quantitatively determine if there are any potential outliers across the four listed treatement regimen
   - Pc
     - Filter out the final timepoint (45) in Study_results
-    - Join with Mouse_metdata on 'Mouse ID' and store in a DataFrame
     - Calculate quartiles and IQR for each drug regimen to define filter criteria
     - Add those to an outlier list for each of the four drug regimens
 - Box and Whisker Plot - Tumor Volume by Treatment Regimens
   - WiBA
     - Create a box and whisker plot for each treatment regimen and highlight outliers
   - Pc
-    - Create a box and whisker plot for the regimens on the same plot using the joined DataFrame
+    - Create a box and whisker plot for the regimens on the same plot
     - Check the Matplotlib documentation to style the outliers
 - Line Plot - Capoumulin - Tumor Volume vs. Time Point
   - WiBA
@@ -53,7 +59,7 @@ What is Being Asked? Pseudocode.
   - WiBA
     - Generate a scatter plot of mouse wieght versus average tumor volume for the Capomulin treatment region
   - Pc
-    - Plot a scatter plot using joined DataFrame on any one mouse, plotting 'Weight (g)' against average 'Tumor Volume (mm3)'
+    - Plot a scatter plot on any one mouse, plotting 'Weight (g)' against average 'Tumor Volume (mm3)'
 - Corrlation Coefficient and LinReg Model - Capomulin - Mouse Weight and Average Tumor Volume
   - WiBA
     - Calculate the correlation coefficient and linear regression model between mouse weight and average tumor volume for the Capomulin treatment
