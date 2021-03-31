@@ -25,7 +25,8 @@ What is Being Asked? Pseudocode.
   - WiBA
     - Generate a summary statistics table for the mean, median, variance, std dev, and SEM of the tumor volume for each drug regimen
   - Pc
-    - Loop through a list of each drug regimen to generate the summary statistics and insert the drug regimen and statistic into a table
+    - Use a groupby on drug regimen to generate the summary statistics
+    - Instead of taking the individual groupby aggregates, use .agg() to avoid having to combine them separately
 - Bar Plot - # of Measurements per Treatment Regimen
   - WiBA
     - Generate a bar plot showing the total number of measurements taken for each treatement regimen
