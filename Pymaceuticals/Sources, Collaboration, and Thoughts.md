@@ -37,6 +37,7 @@ What is Being Asked? Pseudocode.
     - Generate a pie plot showing the distribution of female or male mice in the study
   - Pc
     - Use Panda's DataFrame.plot() and Matplotlib's pyplot to plot
+    - For pyplot, show the exact proportion and choose more eyecatching colors
 - Tumor Volume - Mouse across Treatment Regimens
   - WiBA
     - Calculate the final tumor volume of each mouse across the most promising treatment regimens: Capomulin, Ramicane, Infubinol, and Ceftamin
