@@ -1,5 +1,5 @@
 # matplotlib-challenge
-This repository is intending to analyze data on pharmaceutical testing for mice, primarily using the matplotlib Python library.
+This repository is intending to analyze data on pharmaceutical testing for mice, primarily using the Matplotlib Python library.
 
 *Collaborators: Sy Flores*
 
@@ -7,14 +7,11 @@ This repository is intending to analyze data on pharmaceutical testing for mice,
 ## **Table of Contents**
 - [Abstract](#abstract)
 - [Repository](#repository)
-- [Body](#body)
-  - [Data](#data)
-  - [Methodology](#methodology)
+- [Methodology](#methodology)
 - [Conclusion](#conclusion)
-- [Sources](#sources)
 ---
 ## Abstract
-We are intending to
+We are intending to analyze the relationship that specific drug regimen will have on curbing the growth of tumors on mice over a period of time. We will look to identify what Drug Regimen are the most effective at curbing this growth through using of summary statistics and visualizations through the Matplotlib library. Additionally, we will look to establish a correlatory relationship between mouse weight and tumor size in order to determine if weight may contribute to size as expected or if may confound in an unexpected way.
 
 ## Repository
 This section serves as a means to navigate the project/repository.
