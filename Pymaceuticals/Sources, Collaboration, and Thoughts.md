@@ -60,10 +60,12 @@ What is Being Asked? Pseudocode.
   - WiBA
     - Generate a scatter plot of mouse wieght versus average tumor volume for the Capomulin treatment region
   - Pc
-    - Plot a scatter plot on any one mouse, plotting 'Weight (g)' against average 'Tumor Volume (mm3)'
-- Corrlation Coefficient and LinReg Model - Capomulin - Mouse Weight and Average Tumor Volume
+    - Plot  average 'Weight (g)' against average 'Tumor Volume (mm3)'
+- Correlation Coefficient and LinReg Model - Capomulin - Mouse Weight and Average Tumor Volume
   - WiBA
     - Calculate the correlation coefficient and linear regression model between mouse weight and average tumor volume for the Capomulin treatment
     - Plot the linear regression model on top of the previous scatter plot
   - Pc
-    - Do the functions!
+    - Do the stats.linregress function!
+    - The correlation coefficient can be pulled from the stats.linregress.rvalue
+    - Calculate the y value from the slope intercept form by plugging in the x value (average 'Weight (g)')
