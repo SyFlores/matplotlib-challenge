@@ -43,14 +43,13 @@ What is Being Asked? Pseudocode.
     - Calculate the final tumor volume of each mouse across the most promising treatment regimens: Capomulin, Ramicane, Infubinol, and Ceftamin
     - Calculate the quartiles and IQR and quantitatively determine if there are any potential outliers across the four listed treatement regimen
   - Pc
-    - Filter out the final timepoint (45) in Study_results
-    - Calculate quartiles and IQR for each drug regimen to define filter criteria
-    - Add those to an outlier list for each of the four drug regimens
+    - Filter out the final timepoint for each mouse using groupby max on "Timepoint"
 - Box and Whisker Plot - Tumor Volume by Treatment Regimens
   - WiBA
     - Create a box and whisker plot for each treatment regimen and highlight outliers
   - Pc
-    - Create a box and whisker plot for the regimens on the same plot
+    - Loop through a list of "Drug Regimen" to generate each plot
+    - Use subplots to plot each boxplot on the same figure
     - Check the Matplotlib documentation to style the outliers
 - Line Plot - Capoumulin - Tumor Volume vs. Time Point
   - WiBA
